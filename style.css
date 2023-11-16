@@ -305,3 +305,21 @@ html {
     font-size: h4;
   }
 }
+/* reg button zoom in and zoom out */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.RegBtnNow {
+  display: inline-block;
+
+  animation: zoomInOut 3s infinite; /* Adjust the duration as needed */
+}
